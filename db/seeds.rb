@@ -11,7 +11,7 @@ loren = Owner.create(name: "Loren")
 john = Owner.create(name: "John")
 sally = Owner.create(name: "Sally")
 maria = Owner.create(name: "Maria")
-andy = Owner.creat(name: "Andy")
+andy = Owner.create(name: "Andy")
 
 
 Pet.create([
