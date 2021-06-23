@@ -36,6 +36,7 @@ class OwnersController < ApplicationController
   # DELETE /owners/1
   def destroy
     @owner.destroy
+    render json: {message: 'Deleted successfully'}
   end
 
   private

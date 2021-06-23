@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+loren = Owner.create(name: "Loren")
+john = Owner.create(name: "John")
+sally = Owner.create(name: "Sally")
+maria = Owner.create(name: "Maria")
+andy = Owner.creat(name: "Andy")
