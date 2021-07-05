@@ -4,6 +4,7 @@ class OwnersController < ApplicationController
   # GET /owners
   def index
     @owners = Owner.all
+    
 
     render json: @owners
   end
@@ -15,6 +16,7 @@ class OwnersController < ApplicationController
 
   # POST /owners
   def create
+    
     @owner = Owner.new(owner_params)
 
     if @owner.save

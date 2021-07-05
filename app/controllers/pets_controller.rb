@@ -15,6 +15,7 @@ class PetsController < ApplicationController
 
   # POST /pets
   def create
+    #byebug
     @pet = Pet.new(pet_params)
 
     if @pet.save
@@ -36,7 +37,7 @@ class PetsController < ApplicationController
   # DELETE /pets/1
   def destroy
     @pet.destroy
-    render json: {message: 'Pet is deleted!'}
+    render json: {message: 'Pet is Adopted!!'}
   end
 
   private

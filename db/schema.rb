@@ -12,13 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2021_06_23_174455) do
 
-  create_table "owners", force: :cascade do |t|
+  create_table "owners", force: :cascade do |t| 
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "pets", force: :cascade do |t|
+  create_table "pets", force: :cascade do |t|  
     t.string "name"
     t.string "age"
     t.string "species"
