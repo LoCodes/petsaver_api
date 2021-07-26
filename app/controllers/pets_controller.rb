@@ -27,7 +27,9 @@ class PetsController < ApplicationController
 
   # PATCH/PUT /pets/1
   def update
+   
     if @pet.update(pet_params)
+  
       render json: @pet
     else
       render json: @pet.errors, status: :unprocessable_entity
@@ -37,7 +39,7 @@ class PetsController < ApplicationController
   # DELETE /pets/1
   def destroy
     @pet.destroy
-    render json: {message: 'Pet is Adopted!!'}
+    render json: {message: 'Pet is Deleted!!'}
   end
 
   private
@@ -48,6 +50,6 @@ class PetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pet_params
-      params.require(:pet).permit(:name, :age, :species, :breed, :image_url, :owner_id)
+      params.require(:pet).permit(:name, :age, :species, :breed, :image_url, :owner_id, :adopted)
     end
 end
